@@ -1,0 +1,64 @@
+<!-- activity_selection.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- List of activities -->
+    <CheckBox
+        android:id="@+id/activity_hiking_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hiking"
+        android:layout_marginTop="16dp"/>
+
+    <CheckBox
+        android:id="@+id/activity_sightseeing_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sightseeing"
+        android:layout_below="@id/activity_hiking_checkbox"
+        android:layout_marginTop="8dp"/>
+
+    <CheckBox
+        android:id="@+id/activity_swimming_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Swimming"
+        android:layout_below="@id/activity_sightseeing_checkbox"
+        android:layout_marginTop="8dp"/>
+
+    <CheckBox
+        android:id="@+id/activity_other_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Other"
+        android:layout_below="@id/activity_swimming_checkbox"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/destination_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Destination" />
+
+
+    <TextView
+        android:id="@+id/dates_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/activity_other_checkbox"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Finish Button -->
+    <Button
+        android:id="@+id/finish_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finish"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/dates_text_view"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>
